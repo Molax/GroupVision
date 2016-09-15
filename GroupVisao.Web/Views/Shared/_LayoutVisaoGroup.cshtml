@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Group.Visão Sistema de Notificação - @ViewBag.Title</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    @Styles.Render("~/Content/core")
+    @Scripts.Render("~/bundles/core")
+    @Scripts.Render("~/bundles/page-level")
+    @Scripts.Render("~/bundles/plugins")
+    @Scripts.Render("~/bundles/login")
+</head>
+<body class="container-fluid dark-sidebar dark-header-brand">
+    <div id="page-wrapper">
+        <aside id="left-content" data-toggle="open" data-default="open" data-size="">
+            <header class="header-container" onclick="$('#sidebar-backdrop').trigger('click');">
+                <div class="header-wrapper">
+                    <div id="header-brand">
+                        <div class="logo padding-left-2">
+                            <span class="logo-text">Group.Visão</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="sidebar-wrapper">
+                <nav id="sidebar">
+                    <ul>
+                        <li class="nav-main-heading">
+                            <span class="sidebar-mini-hide">Visão Geral</span>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "PaginaInicial")">
+                                <span class="menu-item-ico"><i class="material-icons">dashboard</i></span>
+                                <span class="menu-item-name">DashBoard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Empresa")">
+                                <span class="menu-item-ico"><i class="material-icons">dashboard</i></span>
+                                <span class="menu-item-name">Empresas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Certificado")">
+                                <span class="menu-item-ico"><i class="material-icons">dashboard</i></span>
+                                <span class="menu-item-name">Certificados</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <section id="right-content">
+            <header class="header-container">
+                <div class="header-wrapper">
+                    <div id="header-toolbar">
+                        <ul class="toolbar toolbar-left">
+                            <li>
+                                <a id="sidebar-toggle" data-state="open" href="#" class="SidebarClose"><i class="material-icons">menu</i></a>
+                            </li>
+                        </ul>
+                        <ul class="toolbar toolbar-right">
+                            <li>
+                                <a href="#" id="fullscreen-toggle" data-toggle="tooltip" data-placement="bottom" title="Modo Fullscreen"><i class="material-icons">fullscreen</i></a>
+                            </li>
+                            <li id="user-profile" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar">
+                                        <img src="img/avatar.png" class="img-circle img-responsive" />
+                                    </div>
+                                    <div class="user">
+                                        <span class="username">@ViewBag.nomeUsuario</span>
+                                    </div>
+                                    <span class="expand-ico"><i class="material-icons">expand_more</i></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li id="logout"><a href="../Login/Logout"><i class="material-icons">exit_to_app</i>Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section id="right-content-wrapper">
+                @RenderBody()
+            </section>
+        </section>
+    </div>
+    @Scripts.Render("~/bundles/theme")
+    <script>
+        setTimeout(function () {
+
+            $('.modal-dialog').perfectScrollbar();
+
+        }, 0);
+
+    </script>
+</body>
+</html>

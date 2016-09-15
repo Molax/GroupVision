@@ -1,0 +1,10 @@
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.dll
+E:\GitLab\CertificateAlert\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.pdb
+E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.dll
+E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.pdb

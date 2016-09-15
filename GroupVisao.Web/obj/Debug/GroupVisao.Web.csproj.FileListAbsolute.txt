@@ -1,0 +1,196 @@
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\ApplicationInsights.config
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\csc.exe
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\System.Collections.Immutable.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\vbc.exe
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\VBCSCompiler.exe
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\roslyn\VBCSCompiler.exe.config
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVisao.Web.dll.config
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVisao.Web.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVisao.Web.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Antlr3.Runtime.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\EntityFramework.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\EntityFramework.SqlServer.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.Web.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.WindowsServer.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.ApplicationInsights.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Google.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Web.Infrastructure.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Newtonsoft.Json.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Net.Http.Formatting.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Helpers.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.WebHost.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Mvc.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Optimization.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Razor.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.Deployment.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.Razor.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\WebGrease.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.Web.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AI.WindowsServer.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.ApplicationInsights.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Newtonsoft.Json.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Net.Http.Formatting.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Helpers.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.WebHost.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Mvc.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Optimization.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Razor.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.Deployment.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.WebPages.Razor.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Antlr3.Runtime.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\EntityFramework.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\EntityFramework.SqlServer.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Google.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\System.Web.Http.Owin.xml
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\obj\Debug\GroupVisao.Web.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\obj\Debug\GroupVisao.Web.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Bll.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.ViewModel.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Dal.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Data.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Bll.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.ViewModel.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Dal.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\bin\GroupVision.Data.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVisao.Web\obj\Debug\GroupVisao.Web.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\ApplicationInsights.config
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\csc.exe
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\vbc.exe
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\VBCSCompiler.exe
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVisao.Web.dll.config
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVisao.Web.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVisao.Web.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Antlr3.Runtime.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\EntityFramework.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\EntityFramework.SqlServer.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Bll.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.ViewModel.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.Web.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.ApplicationInsights.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Newtonsoft.Json.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Owin.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Net.Http.Formatting.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Helpers.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.Owin.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.WebHost.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Mvc.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Optimization.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Razor.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.Deployment.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.Razor.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\WebGrease.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Data.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Dal.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Bll.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.ViewModel.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.Web.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.ApplicationInsights.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Newtonsoft.Json.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Net.Http.Formatting.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Helpers.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.WebHost.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Mvc.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Optimization.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Razor.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.Deployment.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.WebPages.Razor.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Antlr3.Runtime.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\EntityFramework.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\EntityFramework.SqlServer.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\System.Web.Http.Owin.xml
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Data.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\bin\GroupVision.Dal.pdb
+E:\GitLab\CertificateAlert\GroupVisao.Web\obj\Debug\GroupVisao.Web.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVisao.Web\obj\Debug\GroupVisao.Web.dll
+E:\GitLab\CertificateAlert\GroupVisao.Web\obj\Debug\GroupVisao.Web.pdb

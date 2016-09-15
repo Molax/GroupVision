@@ -1,0 +1,22 @@
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Bll.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Bll.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Dal.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Data.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Dal.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.Data.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\obj\Debug\GroupVision.Bll.csprojResolveAssemblyReference.cache
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\obj\Debug\GroupVision.Bll.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Bll\obj\Debug\GroupVision.Bll.pdb
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Bll.dll
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Bll.pdb
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Dal.dll
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Data.dll
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.dll
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Dal.pdb
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.Data.pdb
+E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.pdb
+E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.dll
+E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.pdb

@@ -1,0 +1,14 @@
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\bin\Debug\GroupVision.Dal.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\bin\Debug\GroupVision.Dal.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\bin\Debug\GroupVision.Data.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\bin\Debug\GroupVision.Data.pdb
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\obj\Debug\GroupVision.Dal.csprojResolveAssemblyReference.cache
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\obj\Debug\GroupVision.Dal.dll
+c:\users\molax\documents\visual studio 2015\Projects\GroupVisao.Web\GroupVision.Dal\obj\Debug\GroupVision.Dal.pdb
+E:\GitLab\CertificateAlert\GroupVision.Dal\bin\Debug\GroupVision.Dal.dll
+E:\GitLab\CertificateAlert\GroupVision.Dal\bin\Debug\GroupVision.Dal.pdb
+E:\GitLab\CertificateAlert\GroupVision.Dal\bin\Debug\GroupVision.Data.dll
+E:\GitLab\CertificateAlert\GroupVision.Dal\bin\Debug\GroupVision.Data.pdb
+E:\GitLab\CertificateAlert\GroupVision.Dal\obj\Debug\GroupVision.Dal.csprojResolveAssemblyReference.cache
+E:\GitLab\CertificateAlert\GroupVision.Dal\obj\Debug\GroupVision.Dal.dll
+E:\GitLab\CertificateAlert\GroupVision.Dal\obj\Debug\GroupVision.Dal.pdb

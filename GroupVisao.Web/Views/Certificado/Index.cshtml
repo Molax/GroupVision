@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutVisaoGroup.cshtml";
+}
+
+<section class="page-header alternative-header">
+    <ol class="breadcrumb">
+        <li>Pagina Inicial</li>
+        <li>Certificados</li>
+        <li>Geral</li>
+    </ol>
+    <div class="page-header_title">
+        <h1>
+            Certificados
+            <span class="page-header_subtitle"></span>
+        </h1>
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <header>Certificados</header>
+
+            <div class="panel-heading-tools">
+                <div class="btn-group">
+                    <a class="btn btn-icon-toggle panel-tools-menu dropdown-toggle materialRipple-light materialRipple-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">more_vert</i><div class="materialRipple-md-ripple-container"></div></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="materialRipple-dark materialRipple-btn animation-delay-pos1"><a href="#">Atualizar</a><div class="materialRipple-md-ripple-container"></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info alert-callout" role="alert">
+                <strong><i class="fa fa-quote-left fa-lg"></i>&ensp;Dica:&ensp;</strong> Para "Editar" clique no item desejado na tabela
+            </div>
+            <div id="sucesso" style="display:none" class="alert alert-success" role="alert">
+                <strong>Sucesso! </strong> ação feita com sucesso.
+            </div>
+            <div id="erro" style="display:none" class="alert alert-danger" role="alert">
+                <strong>Ops!</strong> Ocorreu um erro, tente novamente.
+            </div>
+            <button id="btn_Certificado" type="button" style="float:right" class="btn btn-raised green-400-background-color text-white" data-toggle="modal" data-target="#cadastrasCertificado">Novo Certificado</button>
+            <div class="panel-table-inner-offset">
+                <table id="tableCertificado" class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tipo</th>
+                            <th>Data de Emissão</th>
+                            <th>Data de Vencimento</th>
+                            <th>Celular</th>
+                            <th>Empresa</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+
+        </div>
+    </div>
+</section>
+<div id="cadastrasCertificado" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Certificado</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <select id="selectCategory" name="select1" class="form-control"></select>
+                            <label for="selectCategory">Empresa</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-12">
+                            <input type="text" class="form-control filled" id="tipo">
+                            <label for="regular2">Tipo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-12">
+                            <input type="date" class="form-control filled" id="data_emissao">
+                            <label for="regular2">Data de Emissão</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-12">
+                            <input type="date" class="form-control filled" id="data_vencimento">
+                            <label for="regular2">Data de Vencimento</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-12">
+                            <input type="text" class="form-control filled" id="celular">
+                            <label for="regular2">Celular</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div id="modal-footer-salvar" class="modal-footer">
+                <button type="button" name="btnSalvarCertificado" class="btn btn-primary btn-ripple materialRipple-light materialRipple-btn blue-400-background-color text-white" data-dismiss="modal">Salvar<div class="materialRipple-md-ripple-container"></div></button>
+            </div>
+            <div id="modal-footer-editar" class="modal-footer" style="display:none">
+                <button type="button" name="btnEditarCertificado" class="btn btn-primary btn-ripple materialRipple-light materialRipple-btn blue-400-background-color text-white" data-dismiss="modal">Salvar<div class="materialRipple-md-ripple-container"></div></button>
+                <button type="button" name="btnDesativarCertificado" class="btn btn-danger btn-ripple materialRipple-light materialRipple-btn red-400-background-color text-white" data-dismiss="modal">Excluir<div class="materialRipple-md-ripple-container"></div></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/DataTable")
+@Scripts.Render("~/bundles/certificado")
