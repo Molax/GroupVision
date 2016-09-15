@@ -21,26 +21,16 @@ certificado.fn = {
             type: 'POST',
             dataType: 'json',
             data: {
-                "nome": $('#nome').val(),
-                "apelido": $('#apelido').val(),
-                "cnpj": $('#cnpj').val(),
-                "celular": $('#celular').val(),
-                "telefone": $('#telefone').val(),
-                "email_cliente": $('#email_cliente').val(),
-                "email_escritorio": $('#email_escritorio').val(),
-                "email_certificado": $('#email_certificado').val(),
-                "responsavel": $('#responsavel').val(),
-                "logradouro": $('#logradouro').val(),
-                "cidade": $('#cidade').val(),
-                "estado": $('#estado').val(),
-                "cep": $('#cep').val(),
-                "bairro": $('#bairro').val(),
-                "complemento": $('#complemento').val()
+                "fkempresa": $('#selectCategory').val(),
+                "tipo": $('#tipo').val(),
+                "data_emissao": $('#data_emissao').val(),
+                "data_vencimento": $('#data_vencimento').val(),
+                "celular": $('#celular').val()
 
             },
             success: function (e) {
-                empresa.global.table.destroy()
-                empresa.fn.selecionaTodasEmpresas()
+                certificado.global.table.destroy()
+                certificado.fn.SelecionaTodosCertificados()
                 $('form')[0].reset();
                 $('#sucesso').show();
             },
@@ -64,26 +54,16 @@ certificado.fn = {
             type: 'PUT',
             dataType: 'json',
             data: {
-                "nome": $('#nome').val(),
-                "apelido": $('#apelido').val(),
+                "fkempresa": $('#selectCategory').val(),
+                "tipo": $('#tipo').val(),
+                "data_emissao": $('#data_emissao').val(),
+                "data_vencimento": $('#data_vencimento').val(),
                 "celular": $('#celular').val(),
-                "cnpj": $('#cnpj').val(),
-                "telefone": $('#telefone').val(),
-                "email_cliente": $('#email_cliente').val(),
-                "email_escritorio": $('#email_escritorio').val(),
-                "email_certificado": $('#email_certificado').val(),
-                "responsavel": $('#responsavel').val(),
-                "logradouro": $('#logradouro').val(),
-                "cidade": $('#cidade').val(),
-                "estado": $('#estado').val(),
-                "cep": $('#cep').val(),
-                "complemento": $('#complemento').val(),
-                "bairro": $('#bairro').val(),
-                "id": empresa.global.selectedRowId
+                "id": certificado.global.selectedRowId
             },
             success: function (e) {
                 certificado.global.table.destroy()
-                certificado.fn.selecionaTodasEmpresas()
+                certificado.fn.SelecionaTodosCertificados()
                 $('form')[0].reset();
                 $('#sucesso').show();
             },
@@ -101,11 +81,11 @@ certificado.fn = {
 
         $.ajax({
 
-            url: 'api/API_Empresa/DesativaCertificado?id=' + certificado.global.selectedRowId,
+            url: 'api/API_Certificado/DesativaCertificado?id=' + certificado.global.selectedRowId,
             type: 'DELETE',
             success: function (e) {
                 certificado.global.table.destroy()
-                certificado.fn.selecionaTodasEmpresas()
+                certificado.fn.SelecionaTodosCertificados()
                 $('form')[0].reset();
                 $('#sucesso').show();
 
@@ -124,21 +104,11 @@ certificado.fn = {
 
         var rowSelected = certificado.global.table.row(that).data()
         certificado.global.selectedRowId = rowSelected.id;
-        //$('#nome').val(rowSelected.nome);
-        //$('#apelido').val(rowSelected.apelido);
-        //$('#cnpj').val(rowSelected.cnpj);
-        //$('#celular').val(rowSelected.celular);
-        //$('#telefone').val(rowSelected.telefone);
-        //$('#email_cliente').val(rowSelected.email_cliente);
-        //$('#email_escritorio').val(rowSelected.email_escritorio);
-        //$('#email_certificado').val(rowSelected.email_certificado);
-        //$('#responsavel').val(rowSelected.responsavel);
-        //$('#logradouro').val(rowSelected.logradouro);
-        //$('#cidade').val(rowSelected.cidade);
-        //$('#estado').val(rowSelected.estado);
-        //$('#cep').val(rowSelected.cep);
-        //$('#bairro').val(rowSelected.bairro);
-        //$('#complemento').val(rowSelected.complemento);
+        $('#tipo').val(rowSelected.tipo);
+        $('#data_emissao').val(rowSelected.data_emissao);
+        $('#data_vencimento').val(rowSelected.data_vencimento);
+        $('#celular').val(rowSelected.celular);
+        $("#selectCategory").val(rowSelected.fkempresa);
         $("#selectCategory").selectpicker('refresh');
 
     },
@@ -168,7 +138,7 @@ certificado.fn = {
             dataType: 'json',
             success: function (data) {
 
-                certificado.global.table = $('#tableEmpresa').DataTable({
+                certificado.global.table = $('#tableCertificado').DataTable({
                     "bScrollInfinite": false,
                     "bScrollCollapse": true,
                     "sScrollY": "500px",
@@ -176,10 +146,11 @@ certificado.fn = {
                     data: data,
                     columns: [
                         { data: 'id' },
-                        { data: 'nome' },
-                        { data: 'apelido' },
-                        { data: 'telefone' },
-                        { data: 'email_cliente' }
+                        { data: 'tipo' },
+                        { data: 'data_emissao' },
+                        { data: 'data_vencimento' },
+                        { data: 'celular' },
+                         { data: 'empresa' }
                     ]
                 });
 
@@ -197,7 +168,7 @@ certificado.fn = {
 
 certificado.delegate = function () {
 
-    $('body').delegate('button[name="btnSalvarEmpresa"]', 'click', function () { certificado.fn.CadastraCertificado(); })
+    $('body').delegate('button[name="btnSalvarCertificado"]', 'click', function () { certificado.fn.CadastraCertificado(); })
              .delegate('#tableCertificado tbody tr', 'click', function () { certificado.fn.editCertificado(this); $('.modal-title').html('Certificado'); })
              .delegate('#btn_Certificado', 'click', function () { certificado.fn.hideShowModalFooter('cadastrasCertificado', 'modal-footer-salvar'); $('.modal-title').html('Nova Empresa'); })
              .delegate('button[name="btnEditarCertificado"]', 'click', function () { certificado.fn.AtualizaCertificado() })

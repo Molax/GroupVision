@@ -20,3 +20,14 @@ E:\GitLab\CertificateAlert\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.pdb
 E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.csprojResolveAssemblyReference.cache
 E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.dll
 E:\GitLab\CertificateAlert\GroupVision.Bll\obj\Debug\GroupVision.Bll.pdb
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Bll.dll
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Bll.pdb
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Dal.dll
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Data.dll
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.dll
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Dal.pdb
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.Data.pdb
+E:\GitLab\GroupVision\GroupVision.Bll\bin\Debug\GroupVision.ViewModel.pdb
+E:\GitLab\GroupVision\GroupVision.Bll\obj\Debug\GroupVision.Bll.csprojResolveAssemblyReference.cache
+E:\GitLab\GroupVision\GroupVision.Bll\obj\Debug\GroupVision.Bll.dll
+E:\GitLab\GroupVision\GroupVision.Bll\obj\Debug\GroupVision.Bll.pdb

@@ -30,9 +30,6 @@ namespace GroupVision.Data
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertCertificado(Certificado instance);
-    partial void UpdateCertificado(Certificado instance);
-    partial void DeleteCertificado(Certificado instance);
     partial void InsertUsuario(Usuario instance);
     partial void UpdateUsuario(Usuario instance);
     partial void DeleteUsuario(Usuario instance);
@@ -42,6 +39,9 @@ namespace GroupVision.Data
     partial void InsertEndereco(Endereco instance);
     partial void UpdateEndereco(Endereco instance);
     partial void DeleteEndereco(Endereco instance);
+    partial void InsertCertificado(Certificado instance);
+    partial void UpdateCertificado(Certificado instance);
+    partial void DeleteCertificado(Certificado instance);
     #endregion
 		
 		public GroupVisionDataContext() : 
@@ -74,14 +74,6 @@ namespace GroupVision.Data
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Certificado> Certificados
-		{
-			get
-			{
-				return this.GetTable<Certificado>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Usuario> Usuarios
 		{
 			get
@@ -105,258 +97,12 @@ namespace GroupVision.Data
 				return this.GetTable<Endereco>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Certificado")]
-	public partial class Certificado : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _PK_ID_CERTIFICADO;
-		
-		private string _TIPO;
-		
-		private System.DateTime _DATA_EMISSAO;
-		
-		private System.DateTime _DATA_VENCIMENTO;
-		
-		private string _CELULAR;
-		
-		private int _FK_EMPRESA;
-		
-		private int _ID_USUARIO_ULT_ATT;
-		
-		private int _DATA_ULT_ATT;
-		
-		private bool _ATIVO;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnPK_ID_CERTIFICADOChanging(int value);
-    partial void OnPK_ID_CERTIFICADOChanged();
-    partial void OnTIPOChanging(string value);
-    partial void OnTIPOChanged();
-    partial void OnDATA_EMISSAOChanging(System.DateTime value);
-    partial void OnDATA_EMISSAOChanged();
-    partial void OnDATA_VENCIMENTOChanging(System.DateTime value);
-    partial void OnDATA_VENCIMENTOChanged();
-    partial void OnCELULARChanging(string value);
-    partial void OnCELULARChanged();
-    partial void OnFK_EMPRESAChanging(int value);
-    partial void OnFK_EMPRESAChanged();
-    partial void OnID_USUARIO_ULT_ATTChanging(int value);
-    partial void OnID_USUARIO_ULT_ATTChanged();
-    partial void OnDATA_ULT_ATTChanging(int value);
-    partial void OnDATA_ULT_ATTChanged();
-    partial void OnATIVOChanging(bool value);
-    partial void OnATIVOChanged();
-    #endregion
-		
-		public Certificado()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PK_ID_CERTIFICADO", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int PK_ID_CERTIFICADO
+		public System.Data.Linq.Table<Certificado> Certificados
 		{
 			get
 			{
-				return this._PK_ID_CERTIFICADO;
-			}
-			set
-			{
-				if ((this._PK_ID_CERTIFICADO != value))
-				{
-					this.OnPK_ID_CERTIFICADOChanging(value);
-					this.SendPropertyChanging();
-					this._PK_ID_CERTIFICADO = value;
-					this.SendPropertyChanged("PK_ID_CERTIFICADO");
-					this.OnPK_ID_CERTIFICADOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIPO", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string TIPO
-		{
-			get
-			{
-				return this._TIPO;
-			}
-			set
-			{
-				if ((this._TIPO != value))
-				{
-					this.OnTIPOChanging(value);
-					this.SendPropertyChanging();
-					this._TIPO = value;
-					this.SendPropertyChanged("TIPO");
-					this.OnTIPOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_EMISSAO", DbType="Date NOT NULL")]
-		public System.DateTime DATA_EMISSAO
-		{
-			get
-			{
-				return this._DATA_EMISSAO;
-			}
-			set
-			{
-				if ((this._DATA_EMISSAO != value))
-				{
-					this.OnDATA_EMISSAOChanging(value);
-					this.SendPropertyChanging();
-					this._DATA_EMISSAO = value;
-					this.SendPropertyChanged("DATA_EMISSAO");
-					this.OnDATA_EMISSAOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_VENCIMENTO", DbType="Date NOT NULL")]
-		public System.DateTime DATA_VENCIMENTO
-		{
-			get
-			{
-				return this._DATA_VENCIMENTO;
-			}
-			set
-			{
-				if ((this._DATA_VENCIMENTO != value))
-				{
-					this.OnDATA_VENCIMENTOChanging(value);
-					this.SendPropertyChanging();
-					this._DATA_VENCIMENTO = value;
-					this.SendPropertyChanged("DATA_VENCIMENTO");
-					this.OnDATA_VENCIMENTOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CELULAR", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string CELULAR
-		{
-			get
-			{
-				return this._CELULAR;
-			}
-			set
-			{
-				if ((this._CELULAR != value))
-				{
-					this.OnCELULARChanging(value);
-					this.SendPropertyChanging();
-					this._CELULAR = value;
-					this.SendPropertyChanged("CELULAR");
-					this.OnCELULARChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_EMPRESA", DbType="Int NOT NULL")]
-		public int FK_EMPRESA
-		{
-			get
-			{
-				return this._FK_EMPRESA;
-			}
-			set
-			{
-				if ((this._FK_EMPRESA != value))
-				{
-					this.OnFK_EMPRESAChanging(value);
-					this.SendPropertyChanging();
-					this._FK_EMPRESA = value;
-					this.SendPropertyChanged("FK_EMPRESA");
-					this.OnFK_EMPRESAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_USUARIO_ULT_ATT", DbType="Int NOT NULL")]
-		public int ID_USUARIO_ULT_ATT
-		{
-			get
-			{
-				return this._ID_USUARIO_ULT_ATT;
-			}
-			set
-			{
-				if ((this._ID_USUARIO_ULT_ATT != value))
-				{
-					this.OnID_USUARIO_ULT_ATTChanging(value);
-					this.SendPropertyChanging();
-					this._ID_USUARIO_ULT_ATT = value;
-					this.SendPropertyChanged("ID_USUARIO_ULT_ATT");
-					this.OnID_USUARIO_ULT_ATTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_ULT_ATT", DbType="Int NOT NULL")]
-		public int DATA_ULT_ATT
-		{
-			get
-			{
-				return this._DATA_ULT_ATT;
-			}
-			set
-			{
-				if ((this._DATA_ULT_ATT != value))
-				{
-					this.OnDATA_ULT_ATTChanging(value);
-					this.SendPropertyChanging();
-					this._DATA_ULT_ATT = value;
-					this.SendPropertyChanged("DATA_ULT_ATT");
-					this.OnDATA_ULT_ATTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ATIVO", DbType="Bit NOT NULL")]
-		public bool ATIVO
-		{
-			get
-			{
-				return this._ATIVO;
-			}
-			set
-			{
-				if ((this._ATIVO != value))
-				{
-					this.OnATIVOChanging(value);
-					this.SendPropertyChanging();
-					this._ATIVO = value;
-					this.SendPropertyChanged("ATIVO");
-					this.OnATIVOChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<Certificado>();
 			}
 		}
 	}
@@ -1026,6 +772,260 @@ namespace GroupVision.Data
 					this._BAIRRO = value;
 					this.SendPropertyChanged("BAIRRO");
 					this.OnBAIRROChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Certificado")]
+	public partial class Certificado : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _PK_ID_CERTIFICADO;
+		
+		private string _TIPO;
+		
+		private System.DateTime _DATA_EMISSAO;
+		
+		private System.DateTime _DATA_VENCIMENTO;
+		
+		private string _CELULAR;
+		
+		private int _FK_EMPRESA;
+		
+		private int _ID_USUARIO_ULT_ATT;
+		
+		private System.DateTime _DATA_ULT_ATT;
+		
+		private bool _ATIVO;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnPK_ID_CERTIFICADOChanging(int value);
+    partial void OnPK_ID_CERTIFICADOChanged();
+    partial void OnTIPOChanging(string value);
+    partial void OnTIPOChanged();
+    partial void OnDATA_EMISSAOChanging(System.DateTime value);
+    partial void OnDATA_EMISSAOChanged();
+    partial void OnDATA_VENCIMENTOChanging(System.DateTime value);
+    partial void OnDATA_VENCIMENTOChanged();
+    partial void OnCELULARChanging(string value);
+    partial void OnCELULARChanged();
+    partial void OnFK_EMPRESAChanging(int value);
+    partial void OnFK_EMPRESAChanged();
+    partial void OnID_USUARIO_ULT_ATTChanging(int value);
+    partial void OnID_USUARIO_ULT_ATTChanged();
+    partial void OnDATA_ULT_ATTChanging(System.DateTime value);
+    partial void OnDATA_ULT_ATTChanged();
+    partial void OnATIVOChanging(bool value);
+    partial void OnATIVOChanged();
+    #endregion
+		
+		public Certificado()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PK_ID_CERTIFICADO", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int PK_ID_CERTIFICADO
+		{
+			get
+			{
+				return this._PK_ID_CERTIFICADO;
+			}
+			set
+			{
+				if ((this._PK_ID_CERTIFICADO != value))
+				{
+					this.OnPK_ID_CERTIFICADOChanging(value);
+					this.SendPropertyChanging();
+					this._PK_ID_CERTIFICADO = value;
+					this.SendPropertyChanged("PK_ID_CERTIFICADO");
+					this.OnPK_ID_CERTIFICADOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIPO", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string TIPO
+		{
+			get
+			{
+				return this._TIPO;
+			}
+			set
+			{
+				if ((this._TIPO != value))
+				{
+					this.OnTIPOChanging(value);
+					this.SendPropertyChanging();
+					this._TIPO = value;
+					this.SendPropertyChanged("TIPO");
+					this.OnTIPOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_EMISSAO", DbType="Date NOT NULL")]
+		public System.DateTime DATA_EMISSAO
+		{
+			get
+			{
+				return this._DATA_EMISSAO;
+			}
+			set
+			{
+				if ((this._DATA_EMISSAO != value))
+				{
+					this.OnDATA_EMISSAOChanging(value);
+					this.SendPropertyChanging();
+					this._DATA_EMISSAO = value;
+					this.SendPropertyChanged("DATA_EMISSAO");
+					this.OnDATA_EMISSAOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_VENCIMENTO", DbType="Date NOT NULL")]
+		public System.DateTime DATA_VENCIMENTO
+		{
+			get
+			{
+				return this._DATA_VENCIMENTO;
+			}
+			set
+			{
+				if ((this._DATA_VENCIMENTO != value))
+				{
+					this.OnDATA_VENCIMENTOChanging(value);
+					this.SendPropertyChanging();
+					this._DATA_VENCIMENTO = value;
+					this.SendPropertyChanged("DATA_VENCIMENTO");
+					this.OnDATA_VENCIMENTOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CELULAR", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string CELULAR
+		{
+			get
+			{
+				return this._CELULAR;
+			}
+			set
+			{
+				if ((this._CELULAR != value))
+				{
+					this.OnCELULARChanging(value);
+					this.SendPropertyChanging();
+					this._CELULAR = value;
+					this.SendPropertyChanged("CELULAR");
+					this.OnCELULARChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_EMPRESA", DbType="Int NOT NULL")]
+		public int FK_EMPRESA
+		{
+			get
+			{
+				return this._FK_EMPRESA;
+			}
+			set
+			{
+				if ((this._FK_EMPRESA != value))
+				{
+					this.OnFK_EMPRESAChanging(value);
+					this.SendPropertyChanging();
+					this._FK_EMPRESA = value;
+					this.SendPropertyChanged("FK_EMPRESA");
+					this.OnFK_EMPRESAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_USUARIO_ULT_ATT", DbType="Int NOT NULL")]
+		public int ID_USUARIO_ULT_ATT
+		{
+			get
+			{
+				return this._ID_USUARIO_ULT_ATT;
+			}
+			set
+			{
+				if ((this._ID_USUARIO_ULT_ATT != value))
+				{
+					this.OnID_USUARIO_ULT_ATTChanging(value);
+					this.SendPropertyChanging();
+					this._ID_USUARIO_ULT_ATT = value;
+					this.SendPropertyChanged("ID_USUARIO_ULT_ATT");
+					this.OnID_USUARIO_ULT_ATTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DATA_ULT_ATT", DbType="Date NOT NULL")]
+		public System.DateTime DATA_ULT_ATT
+		{
+			get
+			{
+				return this._DATA_ULT_ATT;
+			}
+			set
+			{
+				if ((this._DATA_ULT_ATT != value))
+				{
+					this.OnDATA_ULT_ATTChanging(value);
+					this.SendPropertyChanging();
+					this._DATA_ULT_ATT = value;
+					this.SendPropertyChanged("DATA_ULT_ATT");
+					this.OnDATA_ULT_ATTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ATIVO", DbType="Bit NOT NULL")]
+		public bool ATIVO
+		{
+			get
+			{
+				return this._ATIVO;
+			}
+			set
+			{
+				if ((this._ATIVO != value))
+				{
+					this.OnATIVOChanging(value);
+					this.SendPropertyChanging();
+					this._ATIVO = value;
+					this.SendPropertyChanged("ATIVO");
+					this.OnATIVOChanged();
 				}
 			}
 		}

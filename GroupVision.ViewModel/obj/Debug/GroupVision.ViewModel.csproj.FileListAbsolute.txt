@@ -8,3 +8,8 @@ E:\GitLab\CertificateAlert\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel
 E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.csprojResolveAssemblyReference.cache
 E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.dll
 E:\GitLab\CertificateAlert\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.pdb
+E:\GitLab\GroupVision\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.dll
+E:\GitLab\GroupVision\GroupVision.ViewModel\bin\Debug\GroupVision.ViewModel.pdb
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.csprojResolveAssemblyReference.cache
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.dll
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Debug\GroupVision.ViewModel.pdb

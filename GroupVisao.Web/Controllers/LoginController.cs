@@ -51,7 +51,7 @@ namespace GroupVisao.Web.Controllers
         public ActionResult Logout()
         {
             Session["usuarioLogadoID"] = null;
-            return RedirectToAction("Index");
+            return Redirect("~/Login");
         }
     }
 }

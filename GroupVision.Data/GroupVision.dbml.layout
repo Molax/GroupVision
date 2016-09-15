@@ -2,12 +2,6 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GroupVision">
   <DataContextMoniker Name="/GroupVisionDataContext" />
   <nestedChildShapes>
-    <classShape Id="8eae3164-9899-49b1-9061-16d1ec4dba97" absoluteBounds="0.75, 0.75, 2, 2.5401025390625005">
-      <DataClassMoniker Name="/GroupVisionDataContext/Certificado" />
-      <nestedChildShapes>
-        <elementListCompartment Id="5347d695-65bb-4044-a918-2c0eda88c1d3" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="9b9ff443-61b3-46a1-9a7a-6ef9145e6ab8" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/GroupVisionDataContext/Usuario" />
       <nestedChildShapes>
@@ -24,6 +18,12 @@
       <DataClassMoniker Name="/GroupVisionDataContext/Endereco" />
       <nestedChildShapes>
         <elementListCompartment Id="6207d39e-64dc-4956-b34b-5158b256ad94" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0cf3be31-2702-4d01-a274-cc837ba8ee80" absoluteBounds="1.375, 1.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/GroupVisionDataContext/Certificado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18626328-cdc7-4944-94e3-ae84ccc71a63" absoluteBounds="1.3899999999999997, 1.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

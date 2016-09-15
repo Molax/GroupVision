@@ -234,6 +234,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\API_CertificadoController.cs" />
     <Compile Include="Controllers\API_EmpresaController.cs" />
     <Compile Include="Controllers\CertificadoController.cs" />
     <Compile Include="Controllers\EmpresaController.cs" />
