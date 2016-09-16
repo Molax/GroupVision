@@ -1,0 +1,5 @@
+E:\GitLab\GroupVision\GroupVision.ViewModel\bin\Release\GroupVision.ViewModel.dll
+E:\GitLab\GroupVision\GroupVision.ViewModel\bin\Release\GroupVision.ViewModel.pdb
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Release\GroupVision.ViewModel.csprojResolveAssemblyReference.cache
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Release\GroupVision.ViewModel.dll
+E:\GitLab\GroupVision\GroupVision.ViewModel\obj\Release\GroupVision.ViewModel.pdb

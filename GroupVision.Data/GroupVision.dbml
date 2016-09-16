@@ -1,5 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GroupVisao" Class="GroupVisionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=ATIVO216\SQLEXPRESS;Initial Catalog=GroupVisao;Integrated Security=True" SettingsObjectName="GroupVision.Data.Properties.Settings" SettingsPropertyName="GroupVisaoConnectionString1" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Certificado" Class="GroupVisionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=certificate2016.copbpmix748w.us-west-2.rds.amazonaws.com,1433;Initial Catalog=Certificado;Persist Security Info=True;User ID=certvision" SettingsObjectName="GroupVision.Data.Properties.Settings" SettingsPropertyName="CertificadoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Certificado" Member="Certificados">
+    <Type Name="Certificado">
+      <Column Name="PK_ID_CERTIFICADO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TIPO" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DATA_EMISSAO" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DATA_VENCIMENTO" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CELULAR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FK_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_USUARIO_ULT_ATT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DATA_ULT_ATT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ATIVO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
   <Table Name="dbo.Usuario" Member="Usuarios">
     <Type Name="Usuario">
       <Column Name="PK_ID_USUARIO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -34,19 +47,6 @@
       <Column Name="COMPLEMENTO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="FK_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="BAIRRO" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Certificado" Member="Certificados">
-    <Type Name="Certificado">
-      <Column Name="PK_ID_CERTIFICADO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TIPO" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="DATA_EMISSAO" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="DATA_VENCIMENTO" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="CELULAR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="FK_EMPRESA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_USUARIO_ULT_ATT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DATA_ULT_ATT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ATIVO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

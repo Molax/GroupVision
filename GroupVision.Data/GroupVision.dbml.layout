@@ -2,28 +2,28 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GroupVision">
   <DataContextMoniker Name="/GroupVisionDataContext" />
   <nestedChildShapes>
-    <classShape Id="9b9ff443-61b3-46a1-9a7a-6ef9145e6ab8" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
-      <DataClassMoniker Name="/GroupVisionDataContext/Usuario" />
-      <nestedChildShapes>
-        <elementListCompartment Id="d7642eef-7789-4b3e-880c-e697a1bffdb0" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="9acc114c-4dcd-4821-831c-5a0d96e0ef6e" absoluteBounds="3.75, 3.75, 2, 3.3093082682291666">
-      <DataClassMoniker Name="/GroupVisionDataContext/Empresa" />
-      <nestedChildShapes>
-        <elementListCompartment Id="724484ba-ba38-43fa-8419-09012b958fec" absoluteBounds="3.765, 4.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="ec2d5412-5246-4295-b6cd-18accd0054e9" absoluteBounds="6.75, 0.75, 2, 2.3478011067708335">
-      <DataClassMoniker Name="/GroupVisionDataContext/Endereco" />
-      <nestedChildShapes>
-        <elementListCompartment Id="6207d39e-64dc-4956-b34b-5158b256ad94" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="0cf3be31-2702-4d01-a274-cc837ba8ee80" absoluteBounds="1.375, 1.375, 2, 2.5401025390625">
+    <classShape Id="cdbb2cb8-523b-4a3d-a9dc-8badc8389465" absoluteBounds="0.75, 0.75, 2, 2.5401025390625005">
       <DataClassMoniker Name="/GroupVisionDataContext/Certificado" />
       <nestedChildShapes>
-        <elementListCompartment Id="18626328-cdc7-4944-94e3-ae84ccc71a63" absoluteBounds="1.3899999999999997, 1.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="882e4d93-e613-40b3-bc9f-3208e94bcaae" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c7c91b24-b474-422d-839c-61764847ed22" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/GroupVisionDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47221b7a-a06f-4cfc-85d3-f3ada2764aa3" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6b0c854-6811-4a2b-8028-45f7f99c7a58" absoluteBounds="3.75, 3.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/GroupVisionDataContext/Empresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8dd286c-7a1a-46b0-bac3-65a678801ce2" absoluteBounds="3.765, 4.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a06bee93-2a16-40a0-bf78-dca0a8f36a4f" absoluteBounds="6.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/GroupVisionDataContext/Endereco" />
+      <nestedChildShapes>
+        <elementListCompartment Id="286f42e1-fdd7-4984-bf2e-75ae61fbd521" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

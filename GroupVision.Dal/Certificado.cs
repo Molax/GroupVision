@@ -8,7 +8,7 @@ namespace GroupVision.Dal
 {
     public class Certificado
     {
-        public void CadastraCertificado(string celular, DateTime  data_emissao, DateTime  data_vencimento, int fkEmpresa, string tipo)
+        public void CadastraCertificado(string celular, DateTime data_emissao, DateTime data_vencimento, int fkEmpresa, string tipo)
         {
             using (var db = new GroupVisionDataContext())
             {
@@ -75,6 +75,6 @@ namespace GroupVision.Dal
             }
         }
 
-       
+
     }
 }

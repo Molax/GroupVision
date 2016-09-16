@@ -339,6 +339,7 @@
     <Content Include="Scripts\DataTables\images\Sorting icons.psd" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular2.eot" />
+    <None Include="Properties\PublishProfiles\Certificado.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\calendar.min.js" />
     <Content Include="Scripts\chartist.min.js" />

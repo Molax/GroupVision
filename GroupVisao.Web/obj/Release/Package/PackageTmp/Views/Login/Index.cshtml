@@ -1,0 +1,79 @@
+﻿@model GroupVisao.Web.Models.Login
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!-- Mirrored from bemat-admin.cerocreativo.cl/v1.0.1/dark/page-authentication-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Mar 2016 17:33:07 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Group Vision</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    @Styles.Render("~/Content/core")
+</head>
+<body id="page-authentication" class="container-fluid ">
+    <div id="authentication-box" class="authentication-style1">
+        <div class="authentication-box-wrapper">
+            <div class="panel panel-default">
+                <div class="panel-body no-padding">
+
+                    <div class="authentication-header">
+                        <div class="logo-box logo-box-primary-light padding-top-4">
+                            <img src="http://cvsagencia.com.br/Desenvolvimento-Sites/Wordpress/Vision_Group_site/wp-content/uploads/2016/01/logo-184x28.png" />
+                        </div>
+                        <span>Faça login para acessar o sistema</span>
+                    </div>
+                    <div class="authentication-body">
+                        @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group floating-label">
+                                @Html.TextBoxFor(a => a.login, new { @class = "form-control"})
+                                @Html.LabelFor(a => a.login, "Usuário")
+                            </div>
+                            <div class="form-group floating-label">
+                                @Html.PasswordFor(a => a.password, new { @class = "form-control" })
+                                @Html.LabelFor(a => a.password, "Senha")
+                            </div>
+                            <button name="btnLogin" type="submit" class="btn btn-info btn-raised btn-block">Entrar</button>
+                            <div class="authentication-body-footer margin-top-5">
+                                <div class="text-right">
+                                    @Html.ActionLink("Esqueçeu sua senha?", "Index", "LembrarSenha")
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/core")
+    @Scripts.Render("~/bundles/page-level")
+    @Scripts.Render("~/bundles/plugins")
+    @Scripts.Render("~/bundles/theme")
+    @Scripts.Render("~/bundles/login")
+    @{
+        if (!String.IsNullOrEmpty(ViewBag.errorMessage))
+        {
+            <script>
+                setTimeout(function () {
+                    $.snackbar("add", {
+                        msg: "@ViewBag.errorMessage",
+                        buttonText: "Fechar",
+                    });
+                }, 1000);
+            </script>
+        }
+    }
+
+</body>
+</html>

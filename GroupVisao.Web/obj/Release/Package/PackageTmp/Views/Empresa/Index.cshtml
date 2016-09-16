@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutVisaoGroup.cshtml";
+}
+
+<section class="page-header alternative-header">
+    <ol class="breadcrumb">
+        <li>Pagina Inicial</li>
+        <li>Empresa</li>
+        <li>Geral</li>
+    </ol>
+    <div class="page-header_title">
+        <h1>
+            Empresas
+            <span class="page-header_subtitle"></span>
+        </h1>
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <header>Empresas</header>
+
+            <div class="panel-heading-tools">
+                <div class="btn-group">
+                    <a class="btn btn-icon-toggle panel-tools-menu dropdown-toggle materialRipple-light materialRipple-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">more_vert</i><div class="materialRipple-md-ripple-container"></div></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="materialRipple-dark materialRipple-btn animation-delay-pos1"><a href="#">Atualizar</a><div class="materialRipple-md-ripple-container"></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info alert-callout" role="alert">
+                <strong><i class="fa fa-quote-left fa-lg"></i>&ensp;Dica:&ensp;</strong> Para "Editar" clique no item desejado na tabela
+            </div>
+            <div id="sucesso" style="display:none" class="alert alert-success" role="alert">
+                <strong>Sucesso !  ação feita com sucesso</strong>.
+            </div>
+            <div id="erro" style="display:none" class="alert alert-danger" role="alert">
+                <strong>Ops ! Ocorreu um erro, tente novamente.</strong> 
+            </div>
+            <button id="btn_Empresa" type="button" style="float:right" class="btn btn-raised green-400-background-color text-white" data-toggle="modal" data-target="#cadastraempresa">Nova Empresa</button>
+            <div class="panel-table-inner-offset">
+                <table id="tableEmpresa" class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Apelido</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+
+        </div>
+    </div>
+</section>
+<div id="cadastraempresa" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Empresa</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="nome">
+                            <label for="regular2">Nome</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="apelido">
+                            <label for="regular2">Apelido</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="cnpj">
+                            <label for="regular2">CNPJ</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="celular">
+                            <label for="regular2">Celular</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="telefone">
+                            <label for="regular2">Telefone</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="responsavel">
+                            <label for="regular2">Responsável</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="email_cliente">
+                            <label for="regular2">Email do Cliente</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="email_escritorio">
+                            <label for="regular2">Email do Escritório</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="email_certificado">
+                            <label for="regular2">Email do Certificado</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="cep">
+                            <label for="regular2">CEP</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="cidade">
+                            <label for="regular2">Cidade</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="estado">
+                            <label for="regular2">Estado</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="logradouro">
+                            <label for="regular2">Rua</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="bairro">
+                            <label for="regular2">Bairro</label>
+                        </div>
+                        <div class="form-group floating-label col-lg-4">
+                            <input type="text" class="form-control filled" id="complemento">
+                            <label for="regular2">Complemento</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div id="modal-footer-salvar" class="modal-footer">
+                <button type="button" name="btnSalvarEmpresa" class="btn btn-primary btn-ripple materialRipple-light materialRipple-btn blue-400-background-color text-white" data-dismiss="modal">Salvar<div class="materialRipple-md-ripple-container"></div></button>
+            </div>
+            <div id="modal-footer-editar" class="modal-footer" style="display:none">
+                <button type="button" name="btnEditarEmpresa" class="btn btn-primary btn-ripple materialRipple-light materialRipple-btn blue-400-background-color text-white" data-dismiss="modal">Salvar<div class="materialRipple-md-ripple-container"></div></button>
+                <button type="button" name="btnDeletarEmpresa" class="btn btn-danger btn-ripple materialRipple-light materialRipple-btn red-400-background-color text-white" data-dismiss="modal">Excluir<div class="materialRipple-md-ripple-container"></div></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/DataTable")
+@Scripts.Render("~/bundles/empresa")
+
+<script type="text/javascript">$(document).ready(function () {
+
+    $("#cnpj").mask("99.999.999/9999-99");
+
+    $("#celular").mask("(99)99999-9999");
+
+    $("#cep").mask("99999-999");
+
+    $("#telefone").mask("(99)9999-9999");
+
+});</script>

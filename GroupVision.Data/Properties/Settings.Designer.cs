@@ -53,5 +53,17 @@ namespace GroupVision.Data.Properties {
                 return ((string)(this["GroupVisaoConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=certificate2016.copbpmix748w.us-west-2.rds.amazonaws.com,1433;Initial" +
+            " Catalog=Certificado;Persist Security Info=True;User ID=certvision;Password=visa" +
+            "o2016")]
+        public string CertificadoConnectionString {
+            get {
+                return ((string)(this["CertificadoConnectionString"]));
+            }
+        }
     }
 }
