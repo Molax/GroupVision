@@ -12,9 +12,9 @@ namespace GroupVision.ViewModel
 
         public string tipo { get; set; }
 
-        public DateTime data_emissao { get; set; }
+        public string data_emissao { get; set; }
 
-        public DateTime data_vencimento { get; set; }
+        public string data_vencimento { get; set; }
 
         public string celular { get; set; }
 

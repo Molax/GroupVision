@@ -36,10 +36,10 @@
                 <strong><i class="fa fa-quote-left fa-lg"></i>&ensp;Dica:&ensp;</strong> Para "Editar" clique no item desejado na tabela
             </div>
             <div id="sucesso" style="display:none" class="alert alert-success" role="alert">
-                <strong>Sucesso! </strong> ação feita com sucesso.
+                <strong>Sucesso !  ação feita com sucesso</strong>.
             </div>
             <div id="erro" style="display:none" class="alert alert-danger" role="alert">
-                <strong>Ops!</strong> Ocorreu um erro, tente novamente.
+                <strong>Ops ! Ocorreu um erro, tente novamente.</strong> 
             </div>
             <button id="btn_Empresa" type="button" style="float:right" class="btn btn-raised green-400-background-color text-white" data-toggle="modal" data-target="#cadastraempresa">Nova Empresa</button>
             <div class="panel-table-inner-offset">
@@ -156,3 +156,15 @@
 
 @Scripts.Render("~/bundles/DataTable")
 @Scripts.Render("~/bundles/empresa")
+
+<script type="text/javascript">$(document).ready(function () {
+
+    $("#cnpj").mask("99.999.999/9999-99");
+
+    $("#celular").mask("(99)99999-9999");
+
+    $("#cep").mask("99999-999");
+
+    $("#telefone").mask("(99)9999-9999");
+
+});</script>

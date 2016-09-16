@@ -14,42 +14,54 @@ empresa.fn = {
         $('#sucesso').hide();
         $('#erro').hide();
 
+        if ($('#nome').val() == "" || $('#cnpj').val() == "" || $('#celular').val() == "" || $('#telefone').val() == "" || $('#email_cliente').val() == ""
+            || $('#email_escritorio').val() == "" || $('#email_certificado').val() == "" || $('#responsavel').val() == "" || $('#logradouro').val() == "" || $('#cidade').val() == ""
+             || $('#estado').val() == "" || $('#cep').val() == "" || $('#bairro').val() == "")
+        {
+            $.snackbar("add", {
+                msg: "Por favor, preencha todos os campos",
+                buttonText: "Fechar",
+            });
 
-        $.ajax({
+        }
+        else {
+            $.ajax({
 
-            url: 'api/API_Empresa/CadastraEmpresa',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                "nome": $('#nome').val(),
-                "apelido": $('#apelido').val(),
-                "cnpj": $('#cnpj').val(),
-                "celular": $('#celular').val(),
-                "telefone": $('#telefone').val(),
-                "email_cliente": $('#email_cliente').val(),
-                "email_escritorio": $('#email_escritorio').val(),
-                "email_certificado": $('#email_certificado').val(),
-                "responsavel": $('#responsavel').val(),
-                "logradouro": $('#logradouro').val(),
-                "cidade": $('#cidade').val(),
-                "estado": $('#estado').val(),
-                "cep": $('#cep').val(),
-                "bairro": $('#bairro').val(),
-                "complemento": $('#complemento').val()
+                url: 'api/API_Empresa/CadastraEmpresa',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    "nome": $('#nome').val(),
+                    "apelido": $('#apelido').val(),
+                    "cnpj": $('#cnpj').val(),
+                    "celular": $('#celular').val(),
+                    "telefone": $('#telefone').val(),
+                    "email_cliente": $('#email_cliente').val(),
+                    "email_escritorio": $('#email_escritorio').val(),
+                    "email_certificado": $('#email_certificado').val(),
+                    "responsavel": $('#responsavel').val(),
+                    "logradouro": $('#logradouro').val(),
+                    "cidade": $('#cidade').val(),
+                    "estado": $('#estado').val(),
+                    "cep": $('#cep').val(),
+                    "bairro": $('#bairro').val(),
+                    "complemento": $('#complemento').val()
 
-            },
-            success: function (e) {
-                empresa.global.table.destroy()
-                empresa.fn.selecionaTodasEmpresas()
-                $('form')[0].reset();
-                $('#sucesso').show();
-            },
-            error: function (e) {
-                $('#erro').show();
-            }
+                },
+                success: function (e) {
+                    empresa.global.table.destroy()
+                    empresa.fn.selecionaTodasEmpresas()
+                    $('form')[0].reset();
+                    $('#sucesso').show();
+                },
+                error: function (e) {
+                    $('#erro').show();
+                }
 
-        });
+            });
 
+        }
+        
 
     },
 

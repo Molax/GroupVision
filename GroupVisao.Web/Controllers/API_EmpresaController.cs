@@ -14,10 +14,19 @@ namespace GroupVisao.Web.Controllers
         [HttpPost]
         public int CadastraEmpresa(Models.CadastroEmpresa empresa)
         {
-            return new Empresa().CadastraEmpresa(empresa.apelido, empresa.cnpj, empresa.celular, empresa.cep, empresa.cidade,
-                                                                empresa.complemento, empresa.email_certificado,
-                                                                empresa.email_cliente, empresa.email_escritorio, empresa.estado, empresa.logradouro,
-                                                                empresa.nome, empresa.responsavel, empresa.telefone, empresa.idUsuario, empresa.bairro);
+            try
+            {
+
+                return new Empresa().CadastraEmpresa(empresa.apelido, empresa.cnpj, empresa.celular, empresa.cep, empresa.cidade,
+                                                                    empresa.complemento, empresa.email_certificado,
+                                                                    empresa.email_cliente, empresa.email_escritorio, empresa.estado, empresa.logradouro,
+                                                                    empresa.nome, empresa.responsavel, empresa.telefone, empresa.idUsuario, empresa.bairro);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
@@ -29,10 +38,19 @@ namespace GroupVisao.Web.Controllers
         [HttpPut]
         public void AtualizaEpresa(Models.AtualizaEmpersa empresa)
         {
-            new Empresa().AtualizaEpresa(empresa.apelido, empresa.cnpj, empresa.celular, empresa.cep, empresa.cidade,
-                                                                empresa.complemento, empresa.email_certificado,
-                                                                empresa.email_cliente, empresa.email_escritorio, empresa.estado, empresa.logradouro,
-                                                                empresa.nome, empresa.responsavel, empresa.telefone, empresa.idUsuario, empresa.bairro, empresa.id);
+            try
+            {
+
+                new Empresa().AtualizaEpresa(empresa.apelido, empresa.cnpj, empresa.celular, empresa.cep, empresa.cidade,
+                                                                    empresa.complemento, empresa.email_certificado,
+                                                                    empresa.email_cliente, empresa.email_escritorio, empresa.estado, empresa.logradouro,
+                                                                    empresa.nome, empresa.responsavel, empresa.telefone, empresa.idUsuario, empresa.bairro, empresa.id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
@@ -44,7 +62,15 @@ namespace GroupVisao.Web.Controllers
         [HttpDelete]
         public void DesativaEmpresa(int id)
         {
-            new Empresa().DesativaEmpresa(id);
+            try
+            {
+                new Empresa().DesativaEmpresa(id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

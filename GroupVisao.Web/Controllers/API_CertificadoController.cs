@@ -14,7 +14,15 @@ namespace GroupVisao.Web.Controllers
         [HttpPost]
         public void CadastraCertificado(Models.CadastroCertificado cert)
         {
-            new Bll.Certificado().CadastraCertificado(cert.celular,cert.data_emissao,cert.data_vencimento,cert.fkEmpresa,cert.tipo);
+            try
+            {
+                new Bll.Certificado().CadastraCertificado(cert.celular, cert.data_emissao, cert.data_vencimento, cert.fkEmpresa, cert.tipo);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
@@ -26,13 +34,29 @@ namespace GroupVisao.Web.Controllers
         [HttpDelete]
         public void DesativaCertificado(int id)
         {
-            new Bll.Certificado().DesativaCertificado(id);
+            try
+            {
+                new Bll.Certificado().DesativaCertificado(id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpPut]
         public void AtualizaCertificado(VM.SelecionaTodosCertificados certificaco)
         {
-            new Bll.Certificado().AtualizaCertificado(certificaco.celular, certificaco.data_emissao, certificaco.data_vencimento, certificaco.fkEmpresa, certificaco.id, certificaco.tipo);
+            try
+            {
+                new Bll.Certificado().AtualizaCertificado(certificaco.celular, certificaco.data_emissao, certificaco.data_vencimento, certificaco.fkEmpresa, certificaco.id, certificaco.tipo);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

@@ -14,37 +14,43 @@ certificado.fn = {
         $('#sucesso').hide();
         $('#erro').hide();
 
+        if ($('#tipo').val() == "" || $('#celular').val() == "") {
+            $.snackbar("add", {
+                msg: "Por favor, preencha todos os campos",
+                buttonText: "Fechar",
+            });
 
-        $.ajax({
+        }
+        else {
+            $.ajax({
 
-            url: 'api/API_Certificado/CadastraCertificado',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                "fkempresa": $('#selectCategory').val(),
-                "tipo": $('#tipo').val(),
-                "data_emissao": $('#data_emissao').val(),
-                "data_vencimento": $('#data_vencimento').val(),
-                "celular": $('#celular').val()
+                url: 'api/API_Certificado/CadastraCertificado',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    "fkempresa": $('#selectCategory').val(),
+                    "tipo": $('#tipo').val(),
+                    "data_emissao": $('#data_emissao').val(),
+                    "data_vencimento": $('#data_vencimento').val(),
+                    "celular": $('#celular').val()
 
-            },
-            success: function (e) {
-                certificado.global.table.destroy()
-                certificado.fn.SelecionaTodosCertificados()
-                $('form')[0].reset();
-                $('#sucesso').show();
-            },
-            error: function (e) {
-                $('#erro').show();
-            }
+                },
+                success: function (e) {
+                    certificado.global.table.destroy()
+                    certificado.fn.SelecionaTodosCertificados()
+                    $('form')[0].reset();
+                    $('#sucesso').show();
+                },
+                error: function (e) {
+                    $('#erro').show();
+                }
 
-        });
-
+            });
+        }
 
     },
 
     AtualizaCertificado: function () {
-        console.log('foi');
         $('#sucesso').hide();
         $('#erro').hide();
 
@@ -101,15 +107,23 @@ certificado.fn = {
     editCertificado: function (that) {
         $('#btn_Certificado').trigger('click');
         certificado.fn.hideShowModalFooter('cadastrasCertificado', 'modal-footer-editar');
-
         var rowSelected = certificado.global.table.row(that).data()
         certificado.global.selectedRowId = rowSelected.id;
         $('#tipo').val(rowSelected.tipo);
-        $('#data_emissao').val(rowSelected.data_emissao);
-        $('#data_vencimento').val(rowSelected.data_vencimento);
+
+
+        
+        var newdate = rowSelected.data_emissao.split("/").reverse().join("-");
+        var newdate2 = rowSelected.data_vencimento.split("/").reverse().join("-");
+
+        $('#data_emissao').val(newdate);
+        $('#data_vencimento').val(newdate2);
         $('#celular').val(rowSelected.celular);
-        $("#selectCategory").val(rowSelected.fkempresa);
-        $("#selectCategory").selectpicker('refresh');
+        $("#selectCategory").val(rowSelected.fkEmpresa);
+        setTimeout(function () {
+            $("#selectCategory").selectpicker('refresh');
+        }, 0);
+        
 
     },
 

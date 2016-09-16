@@ -8,7 +8,7 @@ namespace GroupVision.Dal
 {
     public class Certificado
     {
-        public void CadastraCertificado(string celular, DateTime data_emissao, DateTime data_vencimento, int fkEmpresa, string tipo)
+        public void CadastraCertificado(string celular, DateTime  data_emissao, DateTime  data_vencimento, int fkEmpresa, string tipo)
         {
             using (var db = new GroupVisionDataContext())
             {
@@ -24,9 +24,9 @@ namespace GroupVision.Dal
                     {
                         ATIVO = true,
                         CELULAR = celular,
-                        DATA_EMISSAO = data_emissao,
+                        DATA_EMISSAO = Convert.ToDateTime(data_emissao),
                         DATA_ULT_ATT = DateTime.Now,
-                        DATA_VENCIMENTO = data_vencimento,
+                        DATA_VENCIMENTO = Convert.ToDateTime(data_vencimento),
                         FK_EMPRESA = fkEmpresa,
                         ID_USUARIO_ULT_ATT = 1,
                         TIPO = tipo
@@ -47,7 +47,7 @@ namespace GroupVision.Dal
             }
         }
 
-        public void AtualizaCertificado(string celular, DateTime data_emissao, DateTime data_vencimento, int fkEmpresa, int id, string tipo)
+        public void AtualizaCertificado(string celular, string data_emissao, string data_vencimento, int fkEmpresa, int id, string tipo)
         {
             using (var db = new GroupVisionDataContext())
             {
@@ -55,8 +55,8 @@ namespace GroupVision.Dal
 
                 certificado.First().TIPO = tipo;
                 certificado.First().FK_EMPRESA = fkEmpresa;
-                certificado.First().DATA_VENCIMENTO = data_vencimento;
-                certificado.First().DATA_EMISSAO = data_emissao;
+                certificado.First().DATA_VENCIMENTO = Convert.ToDateTime(data_vencimento);
+                certificado.First().DATA_EMISSAO = Convert.ToDateTime(data_emissao);
                 certificado.First().CELULAR = celular;
 
                 db.SubmitChanges();
