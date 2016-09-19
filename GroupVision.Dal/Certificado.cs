@@ -47,6 +47,15 @@ namespace GroupVision.Dal
             }
         }
 
+        public List<Data.Certificado> SelecionaTodosCertificadosVencidos()
+        {
+            using (var db = new GroupVisionDataContext())
+            {
+                var certificados = db.Certificados.Where(c => c.ATIVO == true).ToList();
+                return certificados;
+            }
+        }
+
         public void AtualizaCertificado(string celular, string data_emissao, string data_vencimento, int fkEmpresa, int id, string tipo)
         {
             using (var db = new GroupVisionDataContext())
@@ -75,6 +84,21 @@ namespace GroupVision.Dal
             }
         }
 
+        public List<int> RetornaDadosDash()
+        {
+            List<int> dados = new List<int>();
+            using (var db = new GroupVisionDataContext())
+            {
+               
+
+                var certificado = db.Certificados.Where(c => c.ATIVO == true).ToList();
+                var empresa = db.Empresas.Where(e => e.ATIVO == true).ToList();
+                dados.Add(certificado.Count);
+                dados.Add(empresa.Count);
+            }
+
+            return dados;
+        }
 
     }
 }

@@ -159,7 +159,22 @@
 
 <script type="text/javascript">$(document).ready(function () {
 
-    $("#cnpj").mask("99.999.999/9999-99");
+   // $("#cnpj").mask("99.999.999/9999-99");
+
+
+    $("#cnpj").keydown(function () {
+        try {
+            $("#cnpj").unmask();
+        } catch (e) { }
+
+        var tamanho = $("#cnpj").val().length;
+
+        if (tamanho < 11) {
+            $("#cnpj").mask("999.999.999-99");
+        } else {
+            $("#cnpj").mask("99.999.999/9999-99");
+        }
+    });
 
     $("#celular").mask("(99)99999-9999");
 

@@ -112,12 +112,28 @@ certificado.fn = {
         $('#tipo').val(rowSelected.tipo);
 
 
+        debugger;
         
-        var newdate = rowSelected.data_emissao.split("/").reverse().join("-");
-        var newdate2 = rowSelected.data_vencimento.split("/").reverse().join("-");
+        var d = rowSelected.data_emissao.split('/');
+        var f = rowSelected.data_vencimento.split('/');
+        if (d[0].length < 2) {
+            d[0] = '0' + d[0];
+        }
+        if (d[1].length < 2) {
+            d[1] = '0' + d[1];
+        }
+        if (f[0].length < 2) {
+            f[0] = '0' + f[0];
+        }
+        if (f[1].length < 2) {
+            f[1] = '0' + f[1];
+        }
+        var dataEmissao = d[2]+'-'+ d[0] + '-' + d[1];
+        var dataVencimento = f[2]+'-'+f[0] + '-' + f[1];
 
-        $('#data_emissao').val(newdate);
-        $('#data_vencimento').val(newdate2);
+
+        $('#data_emissao').val(dataEmissao);
+        $('#data_vencimento').val(dataVencimento);
         $('#celular').val(rowSelected.celular);
         $("#selectCategory").val(rowSelected.fkEmpresa);
         setTimeout(function () {
@@ -164,7 +180,8 @@ certificado.fn = {
                         { data: 'data_emissao' },
                         { data: 'data_vencimento' },
                         { data: 'celular' },
-                         { data: 'empresa' }
+                         { data: 'empresa' },
+                         { data: 'vencido' }
                     ]
                 });
 
@@ -184,7 +201,7 @@ certificado.delegate = function () {
 
     $('body').delegate('button[name="btnSalvarCertificado"]', 'click', function () { certificado.fn.CadastraCertificado(); })
              .delegate('#tableCertificado tbody tr', 'click', function () { certificado.fn.editCertificado(this); $('.modal-title').html('Certificado'); })
-             .delegate('#btn_Certificado', 'click', function () { certificado.fn.hideShowModalFooter('cadastrasCertificado', 'modal-footer-salvar'); $('.modal-title').html('Nova Empresa'); })
+             .delegate('#btn_Certificado', 'click', function () { certificado.fn.hideShowModalFooter('cadastrasCertificado', 'modal-footer-salvar'); $('.modal-title').html('Novo Certificado'); })
              .delegate('button[name="btnEditarCertificado"]', 'click', function () { certificado.fn.AtualizaCertificado() })
              .delegate('button[name="btnDesativarCertificado"]', 'click', function () { certificado.fn.DesativaCertificado() });;
 

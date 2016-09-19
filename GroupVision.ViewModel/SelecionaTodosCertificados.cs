@@ -23,5 +23,7 @@ namespace GroupVision.ViewModel
         public int fkUsuario { get; set; }
 
         public string empresa { get; set; }
+
+        public string vencido { get; set; }
     }
 }

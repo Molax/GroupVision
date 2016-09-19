@@ -251,6 +251,7 @@
     <Compile Include="Models\CadastraEndereco.cs" />
     <Compile Include="Models\CadastroCertificado.cs" />
     <Compile Include="Models\CadastroEmpresa.cs" />
+    <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
